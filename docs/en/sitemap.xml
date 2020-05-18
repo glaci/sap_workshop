@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/en/</loc>
+    <lastmod>2020-05-12T18:38:04+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/background.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/background/business-scenario.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/background/technical-context.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/environment.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/hands-on-lab.html</loc>
+    <lastmod>2020-05-07T16:09:21+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/hands-on-lab/preparation.html</loc>
+    <lastmod>2020-05-07T16:10:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/hands-on-lab/cdk-overview.html</loc>
+    <lastmod>2020-05-07T16:21:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/hands-on-lab/cdk-deployment.html</loc>
+    <lastmod>2020-05-07T16:33:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/hands-on-lab/sap-gui-configuration.html</loc>
+    <lastmod>2020-05-07T16:49:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/hands-on-lab/cdk-cleanup.html</loc>
+    <lastmod>2020-05-12T18:38:04+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/categories.html</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/categories.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/categories.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/tags.html</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/tags.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags.html"
+                />
+  </url>
+  
+</urlset>

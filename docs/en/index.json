@@ -1,0 +1,44 @@
+[
+	{	"pageTitle": "Index",
+		"relativePagePath": "/en/"
+	},
+	{
+		"pageTitle": "Background",
+		"relativePagePath": "/en/background.html"
+	},
+	{
+		"pageTitle": "Business Scenario",
+		"relativePagePath": "/en/background/business-scenario.html"
+	},
+	{
+		"pageTitle": "Technical Context",
+		"relativePagePath": "/en/background/technical-context.html"
+	},
+	{
+		"pageTitle": "Environment",
+		"relativePagePath": "/en/environment.html"
+	},
+	{
+		"pageTitle": "Hands-on Lab",
+		"relativePagePath": "/en/hands-on-lab.html"
+	},
+	{
+		"pageTitle": "Preparation",
+		"relativePagePath": "/en/hands-on-lab/preparation.html"
+	},
+	{
+		"pageTitle": "CDK Overview",
+		"relativePagePath": "/en/hands-on-lab/cdk-overview.html"
+	},
+	{
+		"pageTitle": "CDK Deployment",
+		"relativePagePath": "/en/hands-on-lab/cdk-deployment.html"
+	},
+	{
+		"pageTitle": "SAP GUI Configuration",
+		"relativePagePath": "/en/hands-on-lab/sap-gui-configuration.html"
+	},
+	{
+		"pageTitle": "CDK Cleanup",
+		"relativePagePath": "/en/hands-on-lab/cdk-cleanup.html"
+	}]
