@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html lang="en" class="js csstransforms3d">
+<head>
+  <meta charset="utf-8">
+  <meta property="og:title" content="My AWS Workshop" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="description" content="My AWS Workshop">
+<meta name="author" content="Jane Architect">
+
+  <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
+<link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
+
+  <title>Technical Context :: My AWS Workshop</title>
+
+  
+  <link href="../../css/nucleus.css" rel="stylesheet">
+  <link href="../../css/fontawesome-all.min.css" rel="stylesheet">
+  <link href="../../css/hybrid.css" rel="stylesheet">
+  <link href="../../css/featherlight.min.css" rel="stylesheet">
+  <link href="../../css/perfect-scrollbar.min.css" rel="stylesheet">
+  <link href="../../css/auto-complete.css" rel="stylesheet">
+  <link href="../../css/atom-one-dark-reasonable.css" rel="stylesheet">
+  <link href="../../css/theme.css" rel="stylesheet">
+  <link href="../../css/hugo-theme.css" rel="stylesheet">
+  
+  <link href="../../css/theme-aws.css" rel="stylesheet">
+  
+
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+
+  <style>
+    :root #header + #content > #left > #rlblock_left{
+        display:none !important;
+    }
+    
+      :not(pre) > code + span.copy-to-clipboard {
+          display: none;
+      }
+    
+  </style>
+  
+</head>
+
+<body class="" data-url="/en/background/technical-context.html">
+  <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div>
+    <a href="../../" title="Go home">
+        <img style="vertical-align:middle" src="../../images/logo.png" height="70px" />
+    </a>
+</div>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js"></script>
+<script type="text/javascript" src="../../js/auto-complete.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/en";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/background.html" title="Background" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="../../en/background.html">
+          <b>1. </b>Background
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/background/business-scenario.html" title="Business Scenario" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../en/background/business-scenario.html">
+          Business Scenario
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/background/technical-context.html" title="Technical Context" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="../../en/background/technical-context.html">
+          Technical Context
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/environment.html" title="Environment" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../en/environment.html">
+          <b>2. </b>Environment
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/hands-on-lab.html" title="Hands-on Lab" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../en/hands-on-lab.html">
+          <b>3. </b>Hands-on Lab
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/hands-on-lab/preparation.html" title="Preparation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../en/hands-on-lab/preparation.html">
+          Preparation
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/hands-on-lab/cdk-overview.html" title="CDK Overview" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../en/hands-on-lab/cdk-overview.html">
+          CDK Overview
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/hands-on-lab/cdk-deployment.html" title="CDK Deployment" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../en/hands-on-lab/cdk-deployment.html">
+          CDK Deployment
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/hands-on-lab/sap-gui-configuration.html" title="SAP GUI Configuration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../en/hands-on-lab/sap-gui-configuration.html">
+          SAP GUI Configuration
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/hands-on-lab/cdk-cleanup.html" title="CDK Cleanup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../en/hands-on-lab/cdk-cleanup.html">
+          CDK Cleanup
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="/en/background/technical-context.html" selected>English</option>
+                    
+                  
+              
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+
+    <h5 class="copyright">&copy; 2020 Amazon Web Services, Inc. or its Affiliates. All rights reserved.<h5>
+
+</left>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+  <section id="body">
+    <div id="overlay"></div>
+    <div class="padding highlightable">
+      
+      <div>
+        <div id="top-bar">
+          
+          
+          
+          
+          <div id="top-github-link">
+            <a class="github-link" title='Edit this page' href="https://code.amazon.com/packages/Aws-workshop-template/blobs/master/--/workshop/content/background/technical%20context/_index.en.md"
+              target="blank">
+              <i class="fas fa-code-branch"></i>
+              <span id="top-github-link-text">Edit this page</span>
+            </a>
+          </div>
+          
+          
+          
+          <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                <i class="fa fa-bars"></i>
+              </a>
+            </span>
+            
+            <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+            
+            <span class="links">
+              
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href='../../en/'>Amazon WorkSpaces with SAP SSO Workshop</a> > <a href='../../en/background.html'>Background</a> > Technical Context
+          
+          
+          
+          
+          
+          
+            </span>
+          </div>
+          
+          <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#amazon-workspaces--introduction">Amazon WorkSpaces – Introduction</a></li>
+    <li><a href="#amazon-workspaces--architecture">Amazon WorkSpaces – Architecture</a></li>
+    <li><a href="#windows-active-directory---overview">Windows Active Directory - Overview</a></li>
+    <li><a href="#sap-systems-and-sapgui">SAP Systems and SAPGUI</a></li>
+    <li><a href="#sap-kerboros-single-sign-on-sso">SAP Kerboros Single Sign-On (SSO)</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+          
+        </div>
+      </div>
+      
+
+      
+        <div id="body-inner">
+          <h1>Technical Context</h1>
+          
+          
+
+
+
+	<h2 id="amazon-workspaces--introduction">Amazon WorkSpaces – Introduction</h2>
+
+<figure>
+	<img src="../../en/background/technical-context/WorkSpaces_Intro.png?classes=shadow&width=60pc" alt="This image is to introduce Amazon WorkSpaces" />
+</figure>
+<p>Amazon WorkSpaces enables you to provision virtual, cloud-based Microsoft Windows or Amazon Linux desktops for your users, known as WorkSpaces. Amazon WorkSpaces eliminates the need to procure and deploy hardware or install complex software. You can quickly add or remove users as your needs change. Users can access their virtual desktops from multiple devices or web browsers.</p>
+<p>For more information, see <a href="https://aws.amazon.com/workspaces/">Amazon WorkSpaces</a>.</p>
+<h2 id="amazon-workspaces--architecture">Amazon WorkSpaces – Architecture</h2>
+<p>For both Windows and Amazon Linux WorkSpaces, each WorkSpace is associated with a virtual private cloud (VPC), and a directory to store and manage information for your WorkSpaces and users. Directories are managed through the AWS Directory Service, which offers the following options: Simple AD, AD Connector, or AWS Directory Service for Microsoft Active Directory, also known as AWS Managed Microsoft AD. For more information, see the <a href="https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">AWS Directory Service Administration Guide</a>.</p>
+<p>Amazon WorkSpaces uses a directory, either AWS Directory Service or AWS Managed Microsoft AD, to authenticate users. Users access their WorkSpaces by using a client application from a supported device or, for Windows WorkSpaces, a web browser, and they log in by using their directory credentials. The login information is sent to an authentication gateway, which forwards the traffic to the directory for the WorkSpace. After the user is authenticated, streaming traffic is initiated through the streaming gateway.</p>
+<p>Client applications use HTTPS over port 443 for all authentication and session-related information. Client applications use port 4172 for pixel streaming to the WorkSpace and for network health checks. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.html#client-application-ports">Ports for Client Applications</a>.</p>
+<p>Each WorkSpace has two elastic network interfaces associated with it: a network interface for management and streaming (eth0) and a primary network interface (eth1). The primary network interface has an IP address provided by your VPC, from the same subnets used by the directory. This ensures that traffic from your WorkSpace can easily reach the directory. Access to resources in the VPC is controlled by the security groups assigned to the primary network interface. For more information, see <a href="https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.html#network-interfaces">Network Interfaces</a>.</p>
+<p>The following diagram shows the architecture of Amazon WorkSpaces.
+
+<figure>
+	<img src="../../en/background/technical-context/WorkSpaces_Network.png?classes=shadow&width=60pc" alt="This image is to introduce Amazon WorkSpaces network connection" />
+</figure></p>
+<h2 id="windows-active-directory---overview">Windows Active Directory - Overview</h2>
+
+<figure>
+	<img src="../../en/background/technical-context/AD_Intro.png?classes=shadow&width=60pc" alt="This image is to introduce Active Directory" />
+</figure>
+<p>A directory is a hierarchical structure that stores information about objects on the network. A directory service, such as Active Directory Domain Services (AD DS), provides the methods for storing directory data and making this data available to network users and administrators. For example, AD DS stores information about user accounts, such as names, passwords, phone numbers, and so on, and enables other authorized users on the same network to access this information.</p>
+<p>Active Directory stores information about objects on the network and makes this information easy for administrators and users to find and use. Active Directory uses a structured data store as the basis for a logical, hierarchical organization of directory information.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview">Active Directory Domain Services Overview</a>.</p>
+<h2 id="sap-systems-and-sapgui">SAP Systems and SAPGUI</h2>
+
+<figure>
+	<img src="../../en/background/technical-context/SAPGUI.png?classes=shadow&width=60pc" alt="This image is to introduce SAP SSO process" />
+</figure>
+<p>SAPGUI is the GUI client in SAP ERP&rsquo;s 3-tier architecture of database, application server and client. It is software that runs on a Microsoft Windows, Apple Macintosh or Unix desktop, and allows a user to access SAP functionality in SAP applications such as SAP ERP and SAP Business Information Warehouse (now called SAP Business Intelligence). It is the platform used for remote access to the SAP central server in a company network.</p>
+<h2 id="sap-kerboros-single-sign-on-sso">SAP Kerboros Single Sign-On (SSO)</h2>
+<p>Secure Login is an innovative software solution specifically created for improving user and IT productivity and for protecting business-critical data in SAP business solutions by means of secure single sign-on to the SAP environment.</p>
+<p>Secure Login provides strong encryption, secure communication, and single sign-on between a wide variety of SAP components. In a default SAP setup, users enter their SAP user name and password on the SAP GUI logon screen. SAP user names and passwords are transferred through the network without encryption.
+To secure networks, SAP provides a “Secure Network Communications” interface (SNC) that enables users to log on to SAP systems without entering a user name or password. The SNC interface can also direct calls through the SAP Cryptographic Library to encrypt all communication between SAP GUI and the SAP server, thus providing secure single sign-on to SAP.</p>
+
+<figure>
+	<img src="../../en/background/technical-context/SSO_Intro.png?classes=shadow&width=60pc" alt="This image is to introduce Kerboros process" />
+</figure>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../en/background/business-scenario.html" title="Business Scenario"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../en/environment.html" title="Environment" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js"></script>
+    <script src="../../js/perfect-scrollbar.min.js"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../../js/jquery.sticky.js"></script>
+    <script src="../../js/featherlight.min.js"></script>
+    <script src="../../js/html5shiv-printshiv.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js"></script>
+    <script src="../../js/learn.js"></script>
+    <script src="../../js/hugo-learn.js"></script>
+
+    <link href="../../mermaid/mermaid.css" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <div id = 'kinesisStreamName' title = ""/></div>
+<div id = 'cognitoPoolId' title = ""/></div>
+<div id = 'awsRegion' title = ""/></div>
+<div id = 'contentId' title = ""/></div>
+<div id = 'language' title = "en"/></div>
+<div id = 'versions' title = ""/></div>
+
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+<script src="../../js/kinesis.js"></script>
+  </body>
+</html>
